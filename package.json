@@ -2,10 +2,7 @@
   "name": "codiejs",
   "version": "1.0.0",
   "description": "A Node.js library to control a Codie robot",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "lib/codie.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zbettenbuk/codiejs.git"

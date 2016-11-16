@@ -1,0 +1,22 @@
+{
+  "name": "codiejs",
+  "version": "1.0.0",
+  "description": "A Node.js library to control a Codie robot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zbettenbuk/codiejs.git"
+  },
+  "keywords": [
+    "Codie"
+  ],
+  "author": "Zoltan Bettenbuk",
+  "license": "AGPL-1.0",
+  "bugs": {
+    "url": "https://github.com/zbettenbuk/codiejs/issues"
+  },
+  "homepage": "https://github.com/zbettenbuk/codiejs#readme"
+}

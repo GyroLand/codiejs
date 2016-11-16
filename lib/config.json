@@ -1,0 +1,11 @@
+{
+  "codie": "Codie-0019",
+  "lineThreshold": 30,
+  "ble": {
+    "codieUUID": "d46e7e53ba2f4044ade9f85ead45f458",
+    "requestCharacteristicUUID": "25ad752e7a424c90852690e85fb3741d",
+    "requestReplyCharacteristicUUID": "02a92ec60e7e415ca311828a802c61d5",
+    "actionCharacteristicUUID": "0b08f48da33f4a93ad2584928e2ef792",
+    "actionReplyCharacteristicUUID": "8a7f8f018679400cb32b464c71f5d06b"
+  }
+}

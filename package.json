@@ -1,5 +1,5 @@
 {
-  "name": "codie-server",
+  "name": "codiejs",
   "version": "1.0.0",
   "description": "A Node.js library to control a Codie robot",
   "main": "lib/codie.js",

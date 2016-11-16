@@ -10,6 +10,9 @@
   "keywords": [
     "Codie"
   ],
+  "dependencies": {
+    "noble": "1.7.0"
+  },
   "author": "Zoltan Bettenbuk",
   "license": "AGPL-1.0",
   "bugs": {

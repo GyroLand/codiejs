@@ -1,6 +1,6 @@
 {
   "name": "codiejs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Node.js library to control a Codie robot",
   "main": "lib/codie.js",
   "repository": {

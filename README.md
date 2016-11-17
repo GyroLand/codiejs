@@ -76,7 +76,7 @@ Possible animation values: 0, 1
 codie.setAnimation (animation, hue, saturation, repeat, speed, cb);
 ```
 
-### Sensors
+#### Sensors
 
 ##### Distance
 ```javascript

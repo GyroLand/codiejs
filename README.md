@@ -1,5 +1,7 @@
 # codiejs
 
+**Disclaimer**: This library is implemented to work with a specific version of the codie robots, that don't use the routing parameter. If you have a robot that doesn't work with this, feel free to submit an issue on GitHub. I'll contact you for further details and we'll try to add support for that as well. Let's make it a ***true community project***!
+
 A Node.js module to control a Codie robot. This module was written originally for a [codie-server component](https://github.com/zbettenbuk/codie-server)  that allows a Codie to be controlled remotely or use them in apps like Skratch(X), but generalized enough to use it in other custom apps.
 
 ## License

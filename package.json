@@ -1,0 +1,84 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "https://github.com/GyroLand/codiejs.git",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "https://github.com/GyroLand/codiejs.git",
+        "spec": "git+https://github.com/GyroLand/codiejs.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:GyroLand/codiejs.git",
+          "sshUrl": "git+ssh://git@github.com/GyroLand/codiejs.git",
+          "httpsUrl": "git+https://github.com/GyroLand/codiejs.git",
+          "gitUrl": "git://github.com/GyroLand/codiejs.git",
+          "shortcut": "github:GyroLand/codiejs",
+          "directUrl": "https://raw.githubusercontent.com/GyroLand/codiejs/master/package.json"
+        }
+      },
+      "/home/jr"
+    ]
+  ],
+  "_from": "git+https://github.com/GyroLand/codiejs.git",
+  "_id": "codiejs@1.0.3",
+  "_inCache": true,
+  "_location": "/codiejs",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "https://github.com/GyroLand/codiejs.git",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "https://github.com/GyroLand/codiejs.git",
+    "spec": "git+https://github.com/GyroLand/codiejs.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:GyroLand/codiejs.git",
+      "sshUrl": "git+ssh://git@github.com/GyroLand/codiejs.git",
+      "httpsUrl": "git+https://github.com/GyroLand/codiejs.git",
+      "gitUrl": "git://github.com/GyroLand/codiejs.git",
+      "shortcut": "github:GyroLand/codiejs",
+      "directUrl": "https://raw.githubusercontent.com/GyroLand/codiejs/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#USER",
+    "/codie-server"
+  ],
+  "_resolved": "git+https://github.com/GyroLand/codiejs.git#983d5b6655beeed570334ab85e3280bcd53d324b",
+  "_shasum": "ea78e984772258a4d5309e2fddcbec723c06d07c",
+  "_shrinkwrap": null,
+  "_spec": "https://github.com/GyroLand/codiejs.git",
+  "_where": "/home/jr",
+  "author": {
+    "name": "Zoltan Bettenbuk"
+  },
+  "bugs": {
+    "url": "https://github.com/zbettenbuk/codiejs/issues"
+  },
+  "dependencies": {
+    "noble": "1.7.0"
+  },
+  "description": "A Node.js library to control a Codie robot",
+  "devDependencies": {},
+  "gitHead": "983d5b6655beeed570334ab85e3280bcd53d324b",
+  "homepage": "https://github.com/zbettenbuk/codiejs#readme",
+  "keywords": [
+    "Codie"
+  ],
+  "license": "AGPL-1.0",
+  "main": "lib/codie.js",
+  "name": "codiejs",
+  "optionalDependencies": {},
+  "readme": "# codiejs\n\n**Disclaimer**: This library is implemented to work with a specific version of the codie robots, that don't use the routing parameter. If you have a robot that doesn't work with this, feel free to submit an issue on GitHub. I'll contact you for further details and we'll try to add support for that as well. Let's make it a ***true community project***!\n\nA Node.js module to control a Codie robot. This module was written originally for a [codie-server component](https://github.com/zbettenbuk/codie-server)  that allows a Codie to be controlled remotely or use them in apps like Skratch(X), but generalized enough to use it in other custom apps.\n\n## License\n\nThis module is licensed under [AGPL](https://tldrlegal.com/license/gnu-affero-general-public-license-v3-(agpl-3.0)), please take this into consideration when re-using.\n\n## Usage\n\n### Requirements\n\nThis module uses [noble](https://github.com/sandeepmistry/noble) to communicate over bluetooth, and noble has some heavy requirements. Setting up on a mac is fairly easy, you only need xcode, and node-gyp, but on Windows it' a whole different story. Please see noble's documentation for more info.\n\n### Installation\n\n```sh\nnpm install codiejs\n```\n### API\n\n#### Connect\n\n```javascript\nvar codie = new Codie(\"Codie_001\"); // pass your codie's name to the constructor\ncodie.connect(function (error) {\n    if (!error) {\n        // do something with codie\n    }\n});\n```\n\n#### Commands\n\n##### Move\n```javascript\ncodie.move (distance, leftSpeed, rightSpeed, cb);\n```\n\n##### Enable motors\n```javascript\ncodie.enableMotorBoth (leftSpeed, rightSpeed, cb);\n```\n\n##### Enable left motor\n```javascript\ncodie.enableMotorLeft (speed, cb);\n```\n\n##### Enable right motor\n```javascript\ncodie.enableMotorRight (speed, cb);\n```\n\n##### Turn\nNote:\n- positive speed -> left turn\n- negative speed -> right turn\n```javascript\ncodie.turn (angle, speed, cb);\n```\n\n##### Beep\n```javascript\ncodie.beep (volume, frequency, duration, cb);\n```\n\n##### Set led colour\n```javascript\ncodie.setColor (hue, saturation, value, cb);\n```\n\n##### Start animation\nPossible animation values: 0, 1\n```javascript\ncodie.setAnimation (animation, hue, saturation, repeat, speed, cb);\n```\n\n#### Sensors\n\n##### Distance\n```javascript\ncodie.getDistance (cb(sensorData));\n```\n\n##### Battery\n```javascript\ncodie.getBattery (cb(sensorData));\n```\n\n##### Sound\n```javascript\ncodie.getSound (cb(sensorData));\n```\n\n##### Light\n```javascript\ncodie.getLight (cb(sensorData));\n```\n\n##### Line\n```javascript\ncodie.getLine (cb(sensorData));\n```\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zbettenbuk/codiejs.git"
+  },
+  "version": "1.0.3"
+}

@@ -1,0 +1,8 @@
+{
+  "lineThreshold": 30,
+  "ble": {
+    "codieUUID": "52af0001978a628dc8450a104ca2b8dd",
+    "rxCharacteristicUUID": "52af0002978a628dc8450a104ca2b8dd",
+    "txCharacteristicUUID": "52af0003978a628dc8450a104ca2b8dd"
+  }
+}
